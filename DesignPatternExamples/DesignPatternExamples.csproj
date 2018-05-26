@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational.Builder.Builder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SOLID.DIP.cs" />
+    <Compile Include="SOLID.ISP.cs" />
+    <Compile Include="SOLID.LSP.cs" />
     <Compile Include="SOLID.OCP.cs" />
     <Compile Include="SOLID.SRP.cs" />
   </ItemGroup>
