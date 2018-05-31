@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creational.Factories.AbstractFactory.cs" />
-    <Compile Include="Creational.Factories.Factory.cs" />
-    <Compile Include="Creational.Factories.Factory.ExerciseAnswers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
