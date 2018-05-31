@@ -69,6 +69,7 @@ namespace DotNetDesignPatternDemos.Creational.AbstractFactory
       //  factories.Add(drink, factory);
       //}
 
+      // instead of using reflection here, an DI framework should be able to make the factories list available automatically here.
       foreach (var t in typeof(HotDrinkMachine).Assembly.GetTypes())
       {
         if (typeof(IHotDrinkFactory).IsAssignableFrom(t) && !t.IsInterface)
