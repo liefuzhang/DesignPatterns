@@ -54,11 +54,11 @@ namespace DotNetDesignPatternDemos.Creational.Singleton
 
   public class SingletonRecordFinder
   {
-    public int TotalPopulation(IEnumerable<string> names)
+    public int GetTotalPopulation(IEnumerable<string> names)
     {
       int result = 0;
       foreach (var name in names)
-        result += SingletonDatabase.Instance.GetPopulation(name);
+        result += SingletonDatabase.Instance.GetPopulation(name);  // direct dependency on singleton, hard to test
       return result;
     }
   }
@@ -115,7 +115,7 @@ namespace DotNetDesignPatternDemos.Creational.Singleton
       // testing on a live database
       var rf = new SingletonRecordFinder();
       var names = new[] {"Seoul", "Mexico City"};
-      int tp = rf.TotalPopulation(names);
+      int tp = rf.GetTotalPopulation(names);  // bad: involves real db calls
       Assert.That(tp, Is.EqualTo(17500000 + 17400000));
     }
 
