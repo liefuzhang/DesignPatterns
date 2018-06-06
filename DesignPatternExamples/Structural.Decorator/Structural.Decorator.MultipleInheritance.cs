@@ -6,41 +6,51 @@ using System.Threading.Tasks;
 
 namespace DotNetDesignPatternDemos.Structural.Decorator
 {
-  public class Bird
-  {
-    public void Fly()
+    public interface IBird
     {
-      
-    }
-  }
-
-  public class Lizard
-  {
-    public void Crawl()
-    {
-      
-    }
-  }
-
-  public class Dragon // no multiple inheritance
-  {
-    private Bird bird;
-    private Lizard lizard;
-
-    public Dragon(Bird bird, Lizard lizard)
-    {
-      this.bird = bird ?? throw new ArgumentNullException(paramName: nameof(bird));
-      this.lizard = lizard ?? throw new ArgumentNullException(paramName: nameof(lizard));
+        void Fly();
     }
 
-    public void Crawl()
+    public class Bird : IBird
     {
-      lizard.Crawl();
+        public void Fly()
+        {
+
+        }
     }
 
-    public void Fly()
+    public interface ILizard
     {
-      bird.Fly();
+        void Crawl();
     }
-  }
+
+    public class Lizard : ILizard
+    {
+        public void Crawl()
+        {
+
+        }
+    }
+
+    public class Dragon : IBird, ILizard
+    {
+        private Bird bird;
+        private Lizard lizard;
+
+        public Dragon(Bird bird, Lizard lizard)
+        {
+            this.bird = bird ?? throw new ArgumentNullException(paramName: nameof(bird));
+            this.lizard = lizard ?? throw new ArgumentNullException(paramName: nameof(lizard));
+        }
+
+        public void Crawl()
+        {
+            lizard.Crawl();
+        }
+
+        public void Fly()
+        {
+            bird.Fly();
+        }
+    }
 }

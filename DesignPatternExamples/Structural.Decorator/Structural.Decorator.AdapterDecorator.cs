@@ -14,7 +14,7 @@ namespace DotNetDesignPatternDemos.Structural.AdapterDecorator
     public static implicit operator MyStringBuilder(string s)
     {
       var msb = new MyStringBuilder();
-      msb.sb.Append(s);
+      msb.Append(s);
       return msb;
     }
 
