@@ -48,11 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural.Decorator\Exercise.cs" />
     <Compile Include="Structural.Decorator\ExerciseAnswers.cs" />
     <Compile Include="Structural.Decorator\Structural.Decorator.AdapterDecorator.cs" />
     <Compile Include="Structural.Decorator\Structural.Decorator.CodeBuilder.cs" />
-    <Compile Include="Structural.Decorator\Structural.Decorator.Decorator.cs" />
+    <Compile Include="Structural.Decorator\Structural.Decorator.DynamicDecorator.cs" />
     <Compile Include="Structural.Decorator\Structural.Decorator.MultipleInheritance.cs" />
+    <Compile Include="Structural.Flyweight\Exercise.cs" />
+    <Compile Include="Structural.Flyweight\ExerciseAnswers.cs" />
+    <Compile Include="Structural.Flyweight\Structural.Flyweight.TextFormatting.cs" />
+    <Compile Include="Structural.Flyweight\Structural.Flyweight.Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
