@@ -58,6 +58,10 @@
     <Compile Include="Structural.Flyweight\ExerciseAnswers.cs" />
     <Compile Include="Structural.Flyweight\Structural.Flyweight.TextFormatting.cs" />
     <Compile Include="Structural.Flyweight\Structural.Flyweight.Users.cs" />
+    <Compile Include="Structural.Proxy\PropertyProxy.cs" />
+    <Compile Include="Structural.Proxy\Structural.Proxy.DynamicProxy.cs" />
+    <Compile Include="Structural.Proxy\Structural.Proxy.Exercise.cs" />
+    <Compile Include="Structural.Proxy\Structural.Proxy.ProtectionProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
