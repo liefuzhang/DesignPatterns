@@ -94,8 +94,7 @@ namespace DesignPatterns
     static void Main(string[] args)
     {
       var c = new Creature();
-      c.Agility = 10; // c.set_Agility(10) xxxxxxxxxxxxx
-                      // c.Agility = new Property<int>(10)
+      c.Agility = 10; 
       c.Agility = 10;
     }
   }

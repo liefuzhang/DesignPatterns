@@ -1,86 +1,51 @@
-﻿using NUnit.Framework;
+﻿using System;
 
-namespace DotNetDesignPatternDemos.Structural.Proxy
-{
-  namespace Coding.Exercise
-  {
-    public class Person
-    {
-      public int Age { get; set; }
-
-      public string Drink()
-      {
-        return "drinking";
-      }
-
-      public string Drive()
-      {
-        return "driving";
-      }
-
-      public string DrinkAndDrive()
-      {
-        return "driving while drunk";
-      }
+namespace Coding.Exercise {
+    public interface IPerson {
+        string Drink();
+        string Drive();
+        string DrinkAndDrive();
+        int Age { get; set; }
     }
 
-    public class ResponsiblePerson
-    {
-      private readonly Person person;
+    public class Person : IPerson {
+        public int Age { get; set; }
 
-      public ResponsiblePerson(Person person)
-      {
-        this.person = person;
-      }
+        public string Drink() {
+            return "drinking";
+        }
 
-      public int Age
-      {
-        get { return person.Age; }
-        set { person.Age = value; }
-      }
+        public string Drive() {
+            return "driving";
+        }
 
-      public string Drink()
-      {
-        if (Age >= 18)
-          return person.Drink();
-        return "too young";
-      }
-
-      public string Drive()
-      {
-        if (Age >= 16)
-          return person.Drive();
-        return "too young";
-      }
-
-      public string DrinkAndDrive()
-      {
-        return "dead";
-      }
+        public string DrinkAndDrive() {
+            return "driving while drunk";
+        }
     }
-  }
 
-  namespace Coding.Exercise.Tests
-  {
-    [TestFixture]
-    public class TestSuite
-    {
-      [Test]
-      public void Test()
-      {
-        var p = new Person {Age = 10};
-        var rp = new ResponsiblePerson(p);
+    public class ResponsiblePerson:IPerson {
+        private Person person;
+        public ResponsiblePerson(Person person) {
+            // todo
+            this.person = person;
+        }
 
-        Assert.That(rp.Drive(), Is.EqualTo("too young"));
-        Assert.That(rp.Drink(), Is.EqualTo("too young"));
-        Assert.That(rp.DrinkAndDrive(), Is.EqualTo("dead"));
+        public string Drink() {
+            return Age < 18 ? "too young" : person.Drink();
+        }
 
-        rp.Age = 20;
+        public string Drive() {
+            return Age < 16 ? "too young" : person.Drive();
+        }
 
-        Assert.That(rp.Drive(), Is.EqualTo("driving"));
-        Assert.That(rp.Drink(), Is.EqualTo("drinking"));
-        Assert.That(rp.DrinkAndDrive(), Is.EqualTo("dead"));
-      }
+        public string DrinkAndDrive() {
+            return "dead";
+        }
+
+        public int Age {
+            get { return person.Age; }
+            set { person.Age = value; }
+        }
     }
-  }
 }
