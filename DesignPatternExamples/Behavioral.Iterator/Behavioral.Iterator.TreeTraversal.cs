@@ -130,7 +130,7 @@ namespace DotNetDesignPatternDemos.Structural.Iterator.TreeTraversal
       var root = new Node<int>(1,
         new Node<int>(2), new Node<int>(3));
 
-      // C++ style
+      // C++ style - clumsy
       var it = new InOrderIterator<int>(root);
 
       while (it.MoveNext())
