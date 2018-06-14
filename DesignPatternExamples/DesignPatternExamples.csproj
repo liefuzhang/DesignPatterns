@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral.Interpreter\Behavioral.Interpreter.Handmade.cs" />
+    <Compile Include="Behavioral.Interpreter\ExerciseAnswers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,13 +63,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Behavioral.ChainOfResponsibility\" />
+    <Folder Include="Behavioral.Command\" />
     <Folder Include="Creational.Builder\" />
     <Folder Include="Creational.Factories\" />
     <Folder Include="Creational.Singleton\" />
     <Folder Include="SOLID\" />
     <Folder Include="Structural.Adapter\" />
     <Folder Include="Structural.Bridge\" />
-    <Folder Include="Structural.ChainOfResponsibility\" />
     <Folder Include="Structural.Composite\" />
     <Folder Include="Structural.Decorator\" />
     <Folder Include="Structural.Flyweight\" />
