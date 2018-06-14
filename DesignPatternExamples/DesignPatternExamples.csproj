@@ -54,7 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behavioral.Interpreter\Exercise.cs" />
+    <Compile Include="Behavioral.Iterator\ArrayBackedProperties.cs" />
+    <Compile Include="Behavioral.Iterator\Behavioral.Iterator.TreeTraversal.cs" />
+    <Compile Include="Behavioral.Iterator\ExerciseAnswers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +66,7 @@
   <ItemGroup>
     <Folder Include="Behavioral.ChainOfResponsibility\" />
     <Folder Include="Behavioral.Command\" />
+    <Folder Include="Behavioral.Interpreter\" />
     <Folder Include="Creational.Builder\" />
     <Folder Include="Creational.Factories\" />
     <Folder Include="Creational.Singleton\" />
