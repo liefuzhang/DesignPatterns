@@ -54,9 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behavioral.Iterator\ArrayBackedProperties.cs" />
     <Compile Include="Behavioral.Iterator\Behavioral.Iterator.TreeTraversal.cs" />
-    <Compile Include="Behavioral.Iterator\ExerciseAnswers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
