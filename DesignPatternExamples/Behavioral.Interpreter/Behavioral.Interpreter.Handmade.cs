@@ -62,7 +62,7 @@ namespace DotNetDesignPatternDemos.Behavioral.Interpreter.Handmade
     public Token(Type type, string text)
     {
       MyType = type;
-      Text = text ?? throw new ArgumentNullException(paramName: nameof(text));
+      Text = text /*?? throw new ArgumentNullException(paramName: nameof(text))*/;
     }
 
     public override string ToString()
@@ -167,7 +167,7 @@ namespace DotNetDesignPatternDemos.Behavioral.Interpreter.Handmade
 
     public static void Main()
     {
-      var input = "(13+4)-(12+1)";
+      var input = "(13+4)-(12+1)+1";
       var tokens = Lex(input);
       WriteLine(string.Join("\t", tokens));
 

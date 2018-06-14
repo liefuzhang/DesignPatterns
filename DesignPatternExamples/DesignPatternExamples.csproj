@@ -54,8 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behavioral.Interpreter\Behavioral.Interpreter.Handmade.cs" />
-    <Compile Include="Behavioral.Interpreter\ExerciseAnswers.cs" />
+    <Compile Include="Behavioral.Interpreter\Exercise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
