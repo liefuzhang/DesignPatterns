@@ -3,6 +3,8 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using Autofac;
 
+// Behavioral.ChainOfResponsibility.BrokerChain is an example of broker mediator pattern without using Reactive Extension
+
 namespace RxDemos.ImplementingObservable.Broker
 {
   public class Actor

@@ -54,7 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behavioral.Iterator\Behavioral.Iterator.TreeTraversal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +64,8 @@
     <Folder Include="Behavioral.ChainOfResponsibility\" />
     <Folder Include="Behavioral.Command\" />
     <Folder Include="Behavioral.Interpreter\" />
+    <Folder Include="Behavioral.Iterator\" />
+    <Folder Include="Behavioral.Mediator\" />
     <Folder Include="Creational.Builder\" />
     <Folder Include="Creational.Factories\" />
     <Folder Include="Creational.Singleton\" />

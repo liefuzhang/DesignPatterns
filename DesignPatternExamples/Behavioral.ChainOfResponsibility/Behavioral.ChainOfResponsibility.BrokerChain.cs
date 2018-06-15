@@ -28,7 +28,7 @@ namespace DotNetDesignPatternDemos.Behavioral.ChainOfResponsibility.ModifierChai
         }
     }
 
-    public class Game // mediator pattern
+    public class Game // mediator pattern - this acts as the broker
     {
         public event EventHandler<Query> Queries; // effectively a chain
 
