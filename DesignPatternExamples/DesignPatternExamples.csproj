@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral.NullObject\Exercise.cs" />
+    <Compile Include="Behavioral.NullObject\ExerciseAnswers.cs" />
+    <Compile Include="Behavioral.Observer\Behavioral.Observer.Events.cs" />
+    <Compile Include="Behavioral.Observer\Behavioral.Observer.WeakEventPattern.cs" />
+    <Compile Include="Behavioral.Observer\ExerciseAnswers.cs" />
+    <Compile Include="Behavioral.Observer\ObserverPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +72,7 @@
     <Folder Include="Behavioral.Interpreter\" />
     <Folder Include="Behavioral.Iterator\" />
     <Folder Include="Behavioral.Mediator\" />
+    <Folder Include="Behavioral.Memento\" />
     <Folder Include="Creational.Builder\" />
     <Folder Include="Creational.Factories\" />
     <Folder Include="Creational.Singleton\" />
