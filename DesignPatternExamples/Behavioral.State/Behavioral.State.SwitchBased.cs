@@ -24,7 +24,7 @@ namespace DotNetDesignPatternDemos.Behavioral.State
 
       while (true)
       {
-        switch (state)
+        switch (state) // using switch, we dont need to explicitly define transitions
         {
           case State.Locked:
             entry.Append(Console.ReadKey().KeyChar);

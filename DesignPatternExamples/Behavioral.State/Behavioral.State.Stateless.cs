@@ -27,7 +27,7 @@ namespace DesignPatterns
   { 
     static void Main(string[] args)
     {
-      stateMachine = new StateMachine<Health, Activity>(Health.NonReproductive);
+      var stateMachine = new StateMachine<Health, Activity>(Health.NonReproductive);
       stateMachine.Configure(Health.NonReproductive)
         .Permit(Activity.ReachPuberty, Health.Reproductive);
       stateMachine.Configure(Health.Reproductive)
