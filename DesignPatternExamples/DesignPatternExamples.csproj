@@ -74,6 +74,7 @@
     <Folder Include="Behavioral.State\" />
     <Folder Include="Behavioral.Strategy\" />
     <Folder Include="Behavioral.TemplateMethod\" />
+    <Folder Include="Behavioral.Visitor\" />
     <Folder Include="Creational.Builder\" />
     <Folder Include="Creational.Factories\" />
     <Folder Include="Creational.Singleton\" />
