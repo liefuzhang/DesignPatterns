@@ -65,7 +65,7 @@ namespace DotNetDesignPatternDemos.Behavioral.Visitor.Dynamic
       // disadvantages:
 
       // 1) Performance penalty
-      // 2) Runtime error on missing visitor
+      // 2) Runtime error on missing visitor method
       // 3) Problematic w.r.t. inheritance
     }
   }
